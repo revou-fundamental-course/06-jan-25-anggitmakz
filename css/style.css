@@ -195,7 +195,10 @@ a {
   color: #d1d1d1;
   margin-bottom: 10px;
 }
-
+.read-more img {
+  width: 16px;
+  height: 16px;
+}
 /* portofolio */
 #portofolio {
   display: flex;
@@ -518,11 +521,19 @@ textarea {
   padding-bottom: 10px;
 }
 
-/* end */
-
 @media (max-width: 844px) {
   body {
     margin: 0 30px 0 30px;
+    justify-content: center;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  h1 {
+    margin: 0;
+    color: #f1f1f1;
   }
 
   header {
@@ -560,5 +571,58 @@ textarea {
   .text-nav a {
     font-size: 16px;
     padding: 8px 5px;
+  }
+
+  /* hero */
+
+  #hero-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+
+  #hero-section .container-left .left1 .text-with-arrow img {
+    width: 12px;
+    height: 12px;
+  }
+  .hero-text h1 {
+    font-size: 12px;
+  }
+
+  #hero-section .container-left {
+    width: 100%;
+  }
+
+  #hero-section .container-right {
+    width: 100%;
+  }
+
+  #hero-section .container-right h1 {
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  /* about me */
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #about-me .about-hero-text h1 {
+    font-size: 24px;
+  }
+  #about-me .about-sub-text .read-more {
+    font-size: 12px;
+  }
+
+  .read-more img {
+    width: 12px;
+    height: 12px;
   }
 }

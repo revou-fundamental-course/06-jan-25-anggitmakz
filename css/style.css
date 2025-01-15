@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #090909;
   font-family: "Poppins", sans-serif;
@@ -101,7 +104,7 @@ a {
 }
 
 /* hero section */
-.hero-section {
+#hero-section {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -110,7 +113,7 @@ a {
   gap: 50px;
 }
 /* container left */
-.hero-section .container-left {
+#hero-section .container-left {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -142,14 +145,14 @@ a {
   opacity: 1;
 }
 
-.hero-section .text-with-arrow {
+#hero-section .text-with-arrow {
   display: flex;
   align-items: center;
   gap: 20px;
   margin-top: 20px;
 }
 
-.hero-section .text-with-arrow img {
+#hero-section .text-with-arrow img {
   width: 16px;
   height: 16px;
 }
@@ -174,7 +177,7 @@ a {
 }
 
 /* ABOUT ME */
-.about-me {
+#about-me {
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
@@ -194,7 +197,7 @@ a {
 }
 
 /* portofolio */
-.portofolio {
+#portofolio {
   display: flex;
   flex-direction: column;
   margin: 50px 0 50px 0;
@@ -251,7 +254,7 @@ a {
 }
 
 /* services */
-.services {
+#services {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -373,7 +376,7 @@ a {
 
 /* message forms */
 
-.message-forms {
+#message-forms {
   margin: 50px 0 50px 0;
 }
 .main-message {
@@ -395,7 +398,7 @@ a {
   margin-top: 20px;
 }
 
-.message-forms .message-hero-text {
+#message-forms .message-hero-text {
   margin-bottom: 30px;
   width: 500px;
 }
@@ -516,3 +519,46 @@ textarea {
 }
 
 /* end */
+
+@media (max-width: 844px) {
+  body {
+    margin: 0 30px 0 30px;
+  }
+
+  header {
+    margin: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-logo-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  nav.text-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-link {
+    display: contents;
+    flex-direction: column;
+    margin: 0;
+  }
+  .text-navigation ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .text-navigation li {
+    list-style: none;
+    margin: 0;
+  }
+  .text-nav a {
+    font-size: 16px;
+    padding: 8px 5px;
+  }
+}
